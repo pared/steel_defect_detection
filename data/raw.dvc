@@ -1,0 +1,9 @@
+md5: bd4240a7fd8473efe83a09f33b8e12b7
+cmd: ./get_data.sh
+wdir: .
+outs:
+- md5: bf840c7a0a1e27a15327cc925a6889e6.dir
+  path: raw
+  cache: true
+  metric: false
+  persist: false
