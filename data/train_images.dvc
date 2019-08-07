@@ -1,0 +1,9 @@
+md5: 6a9117e60788a481f00466cbc63cbcab
+cmd: unzip raw/train_images.zip -d interim/train_images
+wdir: .
+outs:
+- md5: 401e5bdb515aa56bdb0e60c465e0e950.dir
+  path: interim/train_images
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,9 @@
+md5: fa8d53f3b941615092a54def02e1543a
+cmd: unzip raw/test_images.zip -d interim/test_images
+wdir: .
+outs:
+- md5: 6c3615378bb7fb93088f273638f5a93b.dir
+  path: interim/test_images
+  cache: true
+  metric: false
+  persist: false
