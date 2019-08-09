@@ -1,6 +1,9 @@
-md5: fa8d53f3b941615092a54def02e1543a
+md5: d6b0b621f27ec91a9874c261c290201d
 cmd: unzip raw/test_images.zip -d interim/test_images
 wdir: .
+deps:
+- md5: 18c188df272c30116874d687e2758c43
+  path: raw/test_images.zip
 outs:
 - md5: 6c3615378bb7fb93088f273638f5a93b.dir
   path: interim/test_images

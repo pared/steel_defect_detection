@@ -1,6 +1,9 @@
-md5: 7805eff2457499064749544d95056632
+md5: 2a7cea884b651be6b44d2b689e805c5e
 cmd: unzip raw/train.csv.zip -d interim/ && chmod -R 644 interim/train.csv
 wdir: .
+deps:
+- md5: 2fa48b1b7ba0f1e7301134448405f655
+  path: raw/train.csv.zip
 outs:
 - md5: 943d8bf2e81c27e046f360cc6f48db45
   path: interim/train.csv

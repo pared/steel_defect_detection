@@ -1,6 +1,9 @@
-md5: 6a9117e60788a481f00466cbc63cbcab
+md5: a3c165c49ad7894df9c6583422e8236a
 cmd: unzip raw/train_images.zip -d interim/train_images
 wdir: .
+deps:
+- md5: 041a8b8224048ebf843ba849671b1247
+  path: raw/train_images.zip
 outs:
 - md5: 401e5bdb515aa56bdb0e60c465e0e950.dir
   path: interim/train_images
