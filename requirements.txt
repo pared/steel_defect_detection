@@ -2,9 +2,12 @@
 -e .
 
 # external requirements
-flake8
+kaggle
+jupyter
+numpy
+opencv-python
+pandas
+matplotlib
 python-dotenv>=0.5.1
 dvc==0.54.1
-black
-kaggle
 
