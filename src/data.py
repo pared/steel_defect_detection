@@ -55,7 +55,7 @@ class Data(object):
 
                     num_ones = encoded_mask[i + 1]
 
-                    for j in range(start_index, start_index + num_ones):
+                    for j in range(start_index, start_index + num_ones - 1):
                         bitmap_flat[j] = 1
                 # NOTE ordering of pixels in encoding is top -> down, then left -> right, hence 'F'
                 bitmap = np.reshape(bitmap_flat, (im_h, im_w), order='F')
