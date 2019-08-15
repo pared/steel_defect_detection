@@ -1,0 +1,12 @@
+md5: f006369deb75f50c986c0b747a3c5595
+cmd: python scripts/convert_train_csv.py
+wdir: .
+deps:
+- md5: 943d8bf2e81c27e046f360cc6f48db45
+  path: data/interim/train.csv
+outs:
+- md5: 477474ac870bfa6d74482328b7cc747f
+  path: data/processed/train.csv
+  cache: true
+  metric: false
+  persist: false
