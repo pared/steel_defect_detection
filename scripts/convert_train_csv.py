@@ -19,10 +19,12 @@ def convert(csv):
                 image_id, rles in as_map.items()]
     del as_map
 
-    return pd.DataFrame(new_data, columns=["image", "1", "2", "3", "4"])
+    result = pd.DataFrame(new_data, columns=["image", "1", "2", "3", "4"])
+    result = result.fillna(value=' ')
 
+    return result
 csv_path = PROJECT_ROOT / "data" / "interim" / "train.csv"
 csv = pd.read_csv(csv_path)
 
 converted = convert(csv)
-converted.to_csv(PROJECT_ROOT / "data" / "processed" / "train.csv")
+converted.to_csv(PROJECT_ROOT / "data" / "processed" / "train.csv", index=False)
